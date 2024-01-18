@@ -1,0 +1,17 @@
+input {
+    /* -webkit-box-align: center; */
+    align-items: center;
+    border-radius: 20px;
+    border: 0px;
+    background: rgb(244, 246, 251);
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+    transition: all 0.1s ease 0s;
+    box-sizing: border-box;
+    min-height: 38px;
+    display: inline-flex;
+    width: 50%;
+    font-weight: 400;
+    overflow: hidden;
+    padding-left: 30px;
+}

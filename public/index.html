@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gidens Search | Test Application</title>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <df-messenger
+        project-id="gidens-general-search"
+        agent-id=%DF_AGENT_ID%
+        language-code="en">
+        <df-messenger-chat
+        chat-title="hawaii_resource_agent">
+        </df-messenger-chat>
+    </df-messenger>
+    <!-- Widget JavaScript bundle -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+</body>
+</html>
