@@ -83,7 +83,11 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-    res.send('POST request to the homepage')
+    try {
+        res.sendFile(path.join(__dirname,'./public/index.html'));
+    } catch (e) {
+        res.status(e.status).json({ msg: e.status })
+    }
 })
 
 // app.post('/search', (req, res) => {
